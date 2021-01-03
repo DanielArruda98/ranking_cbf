@@ -1,0 +1,44 @@
+<div>
+    <h2>Equipes</h2>
+
+    <div>
+        <h3>Nome</h3>
+        <input type="text" id="nome">
+        
+        <h3>Sigla</h3>
+        <input type="text" id="sigla" maxlength="3" onkeyup="textUpperCase(this)">
+        
+        <h3>Estado</h3>
+        <select id="estado">
+
+        </select>
+        
+        <h3>Cidade</h3>
+        <select id="cidade">
+            <option selected disabled>Cidade</option>
+        </select>
+
+        <br><br>
+
+        <input type="text" id="nova_cidade">
+        <button id="adicionar_cidade">
+            Adicionar cidade
+        </button>
+        
+        <h3>Escudo</h3>
+        <input type="file" id="escudo_upload">
+        <img id="escudo_view" class="escudo_view">
+        
+        <br><br>
+        <button id="btn-cadastrar_equipe">
+            Enviar
+        </button>
+    </div>
+</div>
+
+<script src="frontend/js/functions/gerais.js"></script>
+<script src="frontend/js/functions/upload.js"></script>
+<script src="frontend/js/functions/formatacao.js"></script>
+<script src="frontend/js/functions/localizacao.js"></script>
+<script src="frontend/js/crud/create/equipes.js"></script>
+<script src="frontend/js/elementos/objetos.js"></script>
