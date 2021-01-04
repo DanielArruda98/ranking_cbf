@@ -9,7 +9,7 @@ function listar() {
         var lista = "";
         
         $.each(retorno, function(idx, value) {
-            lista += listarEquipes(value.id, value.equipe, value.logo, value.cidade, value.uf);
+            lista += listarEquipes(value.id, value.equipe, value.logo, value.cor, value.cidade, value.uf);
         });
 
         if(lista == "") {
@@ -17,5 +17,13 @@ function listar() {
         }
 
         $('#tbody_equipes').html(lista);
+
+        $('.card_equipe').hover(function() {
+            var id = $(this).attr('id');
+            $(`#${id} .equipe.acoes`).show('fast');
+        }, function() {
+            var id = $(this).attr('id');
+            $(`#${id} .equipe.acoes`).fadeOut('slow');
+        });
     });
 }

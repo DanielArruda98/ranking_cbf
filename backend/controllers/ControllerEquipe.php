@@ -9,9 +9,10 @@
         $nome = $_POST['nome'];
         $sigla = $_POST['sigla'];
         $logo = $_POST['logo'];
+        $cor = $_POST['cor'];
         $cidade = $_POST['cidade'];
 
-        $retorno = $equipes->cadastrar($nome, $sigla, $logo, $cidade);
+        $retorno = $equipes->cadastrar($nome, $sigla, $logo, $cor, $cidade);
         echo json_encode($retorno);
     }
 
@@ -39,8 +40,9 @@
         $nome = $_POST['nome'];
         $sigla = $_POST['sigla'];
         $logo = $_POST['logo'];
+        $cor = $_POST['cor'];
         $cidade = $_POST['cidade'];
 
-        $retorno = $equipes->atualizar($id_equipe, $nome, $sigla, $logo, $cidade);
+        $retorno = $equipes->atualizar($id_equipe, $nome, $sigla, $logo, $cor, $cidade);
         echo json_encode($retorno);
     }

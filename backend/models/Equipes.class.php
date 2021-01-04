@@ -6,19 +6,20 @@
 
         /*======================================================================================*/
 
-        public function cadastrar($nome, $sigla, $logo, $cidade) {
+        public function cadastrar($nome, $sigla, $logo, $cor, $cidade) {
             $conexao = new Conexao();
             $connection = $conexao->conectar();
 
             try {
                 $sql = "INSERT INTO equipes 
-                        VALUES (null, :nome, :sigla, :logo, :cidade)";
+                        VALUES (null, :nome, :sigla, :logo, :cor, :cidade)";
 
                 $consulta = $connection->prepare($sql);
 
                 $consulta->bindValue(":nome", $nome);
                 $consulta->bindValue(":sigla", $sigla);
                 $consulta->bindValue(":logo", $logo);
+                $consulta->bindValue(":cor", $cor);
                 $consulta->bindValue(":cidade", $cidade);
 
                 if ($consulta->execute()) {
@@ -47,7 +48,7 @@
             $connection = $conexao->conectar();
 
             try {
-                $sql = "SELECT equipes.id, equipes.nome AS equipe, equipes.sigla, equipes.logo, estados.id AS id_estado, estados.nome AS estado, estados.uf, cidades.id AS id_cidade, cidades.nome AS cidade FROM equipes 
+                $sql = "SELECT equipes.id, equipes.nome AS equipe, equipes.sigla, equipes.logo, equipes.cor, estados.id AS id_estado, estados.nome AS estado, estados.uf, cidades.id AS id_cidade, cidades.nome AS cidade FROM equipes 
                         INNER JOIN cidades ON cidades.id = equipes.fk_cidade
                         INNER JOIN estados ON estados.id = cidades.fk_estado
                         ORDER BY equipes.nome;";
@@ -77,7 +78,7 @@
             $connection = $conexao->conectar();
 
             try {
-                $sql = "SELECT equipes.id, equipes.nome AS equipe, equipes.sigla, equipes.logo, estados.id AS id_estado, estados.nome AS estado, estados.uf, cidades.id AS id_cidade, cidades.nome AS cidade FROM equipes 
+                $sql = "SELECT equipes.id, equipes.nome AS equipe, equipes.sigla, equipes.logo, equipes.cor, estados.id AS id_estado, estados.nome AS estado, estados.uf, cidades.id AS id_cidade, cidades.nome AS cidade FROM equipes 
                         INNER JOIN cidades ON cidades.id = equipes.fk_cidade
                         INNER JOIN estados ON estados.id = cidades.fk_estado
                         WHERE equipes.id = :id_equipe

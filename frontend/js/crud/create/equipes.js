@@ -32,12 +32,14 @@ $('#btn-cadastrar_equipe').click(function () {
 function cadastrarEquipe(logo) {
     var nome = $('#nome').val();
     var sigla = $('#sigla').val();
+    var cor = $('#cor').val();
     var cidade = $('#cidade').val();
 
     var dados = {
         cadastrar : true,
         nome,
         sigla,
+        cor,
         cidade,
         logo
     }
@@ -46,7 +48,8 @@ function cadastrarEquipe(logo) {
         if(retorna.tipo == "success") {
             alert("Sucesso");
             $('#nome').val('');  
-            $('#sigla').val('');  
+            $('#sigla').val(''); 
+            $('#cor').val('');  
             $('#cidade').val(''); 
             $('#escudo_upload').val('');
             $('#escudo_view').attr('src', '');

@@ -1,38 +1,71 @@
 <div>
-    <h2>Equipes</h2>
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Equipes</h1>
+    </div>
 
-    <div>
-        <h3>Nome</h3>
-        <input type="text" id="nome">
-        
-        <h3>Sigla</h3>
-        <input type="text" id="sigla" maxlength="3" onkeyup="textUpperCase(this)">
-        
-        <h3>Estado</h3>
-        <select id="estado">
+    <div class="row">
+        <div class="col-4 coluna-um">
+            <div class="form-group">
+                <label>Escudo</label>
+                <div class="escudo_view">
+                    <input type="file" id="escudo_upload" style="display: none;">
+                    <label for="escudo_upload">
+                        <img src="frontend/images/escudo_default.png" id="escudo_view">
+                    </label>
+                </div>
+            </div> 
+            
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+    
+            <div class="form-group">
+                <label for="sigla">Sigla</label>
+                <input type="text" class="form-control" id="sigla" maxlength="3" onkeyup="textUpperCase(this)">
+            </div>
+        </div>
+    
+        <div class="col-4">
+            <div class="form-group">
+                <label for="cor">Cor</label>
+                <select class="form-control" id="cor">
+                    <option value="warning">Amarelo</option>
+                    <option value="info">Azul Claro</option>
+                    <option value="primary">Azul Escuro</option>
+                    <option value="secondary">Cinza</option>
+                    <option value="dark">Preto</option>
+                    <option value="success">Verde</option>
+                    <option value="danger">Vermelho</option>
+                </select>
+            </div>
 
-        </select>
-        
-        <h3>Cidade</h3>
-        <select id="cidade">
-            <option selected disabled>Cidade</option>
-        </select>
-
-        <br><br>
-
-        <input type="text" id="nova_cidade">
-        <button id="adicionar_cidade">
-            Adicionar cidade
-        </button>
-        
-        <h3>Escudo</h3>
-        <input type="file" id="escudo_upload">
-        <img id="escudo_view" class="escudo_view">
-        
-        <br><br>
-        <button id="btn-cadastrar_equipe">
-            Enviar
-        </button>
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <select class="form-control" id="estado">
+    
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <select class="form-control" id="cidade">
+    
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="nova_cidade">Adicionar Cidade</label>
+                <input type="text" class="form-control" id="nova_cidade">
+                <button class="btn btn-secondary" id="adicionar_cidade">Adicionar cidade</button>
+            </div>
+    
+            <div class="form-group">
+                <button class="btn btn-success" id="btn-cadastrar_equipe">
+                    Cadastrar
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 

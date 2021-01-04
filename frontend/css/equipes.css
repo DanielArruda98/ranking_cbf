@@ -1,4 +1,46 @@
+.coluna-um {
+    border-right: 1.5px solid  rgb(209, 211, 226);
+}
+
 .escudo_view {
-    border: 1px solid black;
-    max-height: 200px;
+    border: 1.5px solid rgb(209, 211, 226);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    height: 170px;
+}
+
+#escudo_view {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.equipe.escudo {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.equipe.nome {
+    width: 75%;
+    float: left;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.equipe.nome .localizacao {
+    font-size: 11px;
+}
+
+.equipe.acoes {
+    display: none;
+    float: right;
+    margin-right: -4px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.equipe.acoes .botao {
+    width: 30px;
 }
