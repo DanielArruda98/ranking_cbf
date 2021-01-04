@@ -52,7 +52,7 @@ function cadastrarEquipe(logo) {
             $('#cor').val('');  
             $('#cidade').val(''); 
             $('#escudo_upload').val('');
-            $('#escudo_view').attr('src', '');
+            $('#escudo_view').attr('src', 'frontend/images/escudo_default.png');
         } else {
             alert("Erro ao cadastrar equipe");
         }
