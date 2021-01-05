@@ -1,3 +1,15 @@
+.centralizar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card_equipe {
+    cursor: pointer;
+}
+
 .coluna-um {
     border-right: 1.5px solid  rgb(209, 211, 226);
 }
@@ -5,14 +17,19 @@
 .escudo_view {
     border: 1.5px solid rgb(209, 211, 226);
     border-radius: 5px;
-    text-align: center;
     padding: 10px;
     height: 156px;
+    text-align: center;
 }
 
 #escudo_view {
     max-height: 135px;
     max-width: 135px;
+}
+
+.center_equipe {
+    height: 50px;
+    width: 50px;
 }
 
 .equipe.escudo {

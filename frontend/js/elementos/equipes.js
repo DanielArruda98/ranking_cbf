@@ -4,7 +4,9 @@ function listarEquipes(id, equipe, logo, cor, cidade, uf) {
         <div class="col-lg-3">
             <div class="card mb-4 border-left-${cor}">
                 <div class="card-body card_equipe" id="card_equipe_${id}">
-                    <div class="equipe escudo"><img src="frontend/images/escudos/${logo}" style="max-height: 50px; max-width: 50px;"></div>
+                    <div class="equipe escudo center_equipe centralizar">
+                        <img src="frontend/images/escudos/${logo}" style="max-height: 50px; max-width: 50px;">
+                    </div>
                     <div class="equipe nome">
                         <div>${equipe}</div>
                         <div class="localizacao">${cidade} (${uf})</div>

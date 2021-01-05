@@ -1,0 +1,7 @@
+.card_temporada {
+    cursor: pointer;
+}
+
+.card_competicoes img {
+    max-height: 150px;
+}

@@ -17,13 +17,16 @@ function listar() {
         }
 
         $('#tbody_equipes').html(lista);
+        hoverEquipe();
+    });
+}
 
-        $('.card_equipe').hover(function() {
-            var id = $(this).attr('id');
-            $(`#${id} .equipe.acoes`).show('fast');
-        }, function() {
-            var id = $(this).attr('id');
-            $(`#${id} .equipe.acoes`).fadeOut('slow');
-        });
+function hoverEquipe() {
+    $('.card_equipe').hover(function() {
+        var id = $(this).attr('id');
+        $(`#${id} .equipe.acoes`).show('fast');
+    }, function() {
+        var id = $(this).attr('id');
+        $(`#${id} .equipe.acoes`).fadeOut('slow');
     });
 }

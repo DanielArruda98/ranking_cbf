@@ -48,9 +48,7 @@ function cadastrarEquipe(logo) {
         if(retorna.tipo == "success") {
             alert("Sucesso");
             $('#nome').val('');  
-            $('#sigla').val(''); 
-            $('#cor').val('');  
-            $('#cidade').val(''); 
+            $('#sigla').val('');
             $('#escudo_upload').val('');
             $('#escudo_view').attr('src', 'frontend/images/escudo_default.png');
         } else {

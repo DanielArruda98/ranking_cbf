@@ -28,8 +28,12 @@ $('.link_equipes_create').click(function(event) {
     redirect(event, "equipes/create.html");
 });
 
-$('.link_temporada').click(function(event) {
-    redirect(event, "temporada.html");
+$('.link_temporadas').click(function(event) {
+    redirect(event, "temporadas/read.html");
+});
+
+$('.link_temporadas_create').click(function(event) {
+    redirect(event, "temporadas/create.html");
 });
 
 $('.link_ranking').click(function(event) {

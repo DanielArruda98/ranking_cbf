@@ -18,6 +18,7 @@
     <link href="frontend/css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="frontend/css/gerais.css">
     <link rel="stylesheet" href="frontend/css/equipes.css">
+    <link rel="stylesheet" href="frontend/css/temporadas.css">
 </head>
 
 <body id="page-top">
@@ -39,16 +40,30 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Pages Collapse Menu -->
+            <!-- Equipes -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEquipes" aria-expanded="true" aria-controls="collapseEquipes">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Equipes</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseEquipes" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item link_equipes" href="#">Listar</a>
                         <a class="collapse-item link_equipes_create" href="#">Cadastrar</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Temporadas -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTemporadas" aria-expanded="true" aria-controls="collapseTemporadas">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Temporadas</span>
+                </a>
+                <div id="collapseTemporadas" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item link_temporadas" href="#">Listar</a>
+                        <a class="collapse-item link_temporadas_create" href="#">Cadastrar</a>
                     </div>
                 </div>
             </li>
@@ -106,13 +121,6 @@
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
             </li>
 
             <!-- Divider -->
