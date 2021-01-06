@@ -2,6 +2,63 @@
     cursor: pointer;
 }
 
-.card_competicoes img {
+.card_competicao {
+    cursor: pointer;
+}
+
+.card_competicao img {
     max-height: 150px;
+}
+
+.coluna-equipes div {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    margin: 4px;
+    border: 1.5px solid rgb(209, 211, 226);
+    border-radius: 5px;
+}
+
+.coluna-equipes img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.card-classificacao {
+    float: left;
+}
+
+.card-classificacao div {
+    float: left;
+}
+
+.numero {
+    font-size: 18px;
+    font-weight: bolder;
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.card-equipe-classificacao {
+    float: left;
+    border: 1px solid rgb(209, 211, 226);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.card-equipe-classificacao .escudo {
+    height: 50px;
+    width: 50px;
+}
+
+.card-equipe-classificacao img {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.card-equipe-classificacao .nome {
+    justify-content: left;
+    height: 50px;
+    width: 180px;
 }

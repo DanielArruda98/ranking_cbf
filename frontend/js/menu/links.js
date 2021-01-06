@@ -10,7 +10,8 @@ function redirect(event, page, title = titulo_original) {
 }
 
 function startPagina(event = null) {
-    redirect(event, "home.html");
+    // redirect(event, "home.html");
+    redirect(event, "temporadas/classificacao.html");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////

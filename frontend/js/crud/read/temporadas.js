@@ -29,5 +29,6 @@ function hoverTemporada() {
 }
 
 function openTemporada(id, ano) {
+    localStorage.setItem('ano_temporada', ano);
     $("#window-view").load("frontend/pages/temporadas/competicoes.html");
 }
